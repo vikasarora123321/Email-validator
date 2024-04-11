@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.opacity{
+    opacity: 0.3;
+}
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0; 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li a:hover {
+    color: rgb(223, 205, 205);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.left-nav {
+    width: 50%;
+}
+
+section {
+    display: flex;
+    min-height: 700px;
+    background-image: url(./img/bg-img1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 40px;
+    justify-content: space-around;
+}
+
+.left-section, .right-section{
+    width: 50%;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+}
+
+h1, input, button{
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+input, button{
+    max-width: 300px;
+}
+.left-section input{
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.left-section button{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.left-section button:hover{
+    cursor: pointer;
+}
+.res-container::first-letter{
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 435px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .left-section, .right-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    nav{
+        height: 40px;
+    }
+    nav ul{
+        display: none;
+    }
+    .left-nav{
+        flex: 1;
+    }
+    nav div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+
+    
+}
